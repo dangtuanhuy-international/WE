@@ -9,4 +9,4 @@ services:
             - $PWD/scripts: /docker-entrypoint-initdb.db.d
         environment: 
             - MYSQL_ROOT_PASSWORD=root
-            -MYSQL_ROOT_PASSWORD=QLBH-MySQL-v3
+            - MYSQL_ROOT_PASSWORD=QLBH-MySQL-v3
