@@ -1,0 +1,12 @@
+version: '3'
+services: 
+    db:
+        image: mysql:5.7
+        ports: 
+            - 3306 : 3306
+        volumes: 
+            - $PWD/db: /var/lib/mysql
+            - $PWD/scripts: /docker-entrypoint-initdb.db.d
+        environment: 
+            - MYSQL_ROOT_PASSWORD=root
+            -MYSQL_ROOT_PASSWORD=QLBH-MySQL-v3
